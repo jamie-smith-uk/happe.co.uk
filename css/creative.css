@@ -6,10 +6,13 @@
 
  @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
 
-html,
+html{
+  background: url('../img/header.jpg');
+  min-height: 100%;
+  background-size: cover;
+}
 body {
-  height: 100%;
-  width: 100%;
+  background-color: transparent;
 }
 body {
   font-family: 'Roboto','Merriweather', 'Helvetica Neue', Arial, sans-serif;
@@ -44,13 +47,15 @@ a.class2:focus {
   color: #7E6AC2;
 }
 
-h1,
+h1 {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Roboto','Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 p {
   font-size: 16px;
@@ -102,7 +107,6 @@ aside {
 }
 .navbar-default .navbar-header .navbar-brand {
   color: #7E6AC2;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -174,12 +178,6 @@ aside {
 header {
   position: relative;
   width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  background-position: center;
-  background-image: url('../img/header.jpg');
   text-align: center;
   color: white;
 }
@@ -467,4 +465,16 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #222222;
+}
+
+
+
+
+.tile {
+  min-height: 100px;
+  position: relative;
+  padding: 20px;
+  opacity: 0.3;
+  background: #f2f2f2;
+  filter: blur(2px);
 }
